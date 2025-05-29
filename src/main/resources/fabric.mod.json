@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "tweaks",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "BTAGameplayTweaks",
+  "description": "some gameplay tweaks to make my life easier",
   "authors": [
-    "Turnip Labs"
+    "undrscre"
   ],
   "contact": {
     "homepage": "",
@@ -17,22 +17,8 @@
   "license": "CC0-1.0",
 
   "environment": "*",
-  "entrypoints": {
-    "main": [
-			"turniplabs.examplemod.ExampleMod"
-    ],
-		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
-		],
-		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
-		],
-		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
-		]
-	},
   "mixins": [
-      "examplemod.mixins.json"
+		"tweaks.mixin.json"
   ],
 
   "depends": {
